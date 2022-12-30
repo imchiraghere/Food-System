@@ -1,0 +1,84 @@
+
+<html lang="en">
+  <head>
+    <title>Food Record's</title>
+    <link rel="icon" type="image/png" href="/images/icon2.png" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css"
+    />
+    <link rel="stylesheet" href="/stylesheets/display.css" />
+  </head>
+  <body>
+    <div class="limiter">
+      <div class="container-table100">
+        <div class="wrap-table100">
+          <div class="heading">
+            <!-- <img src="/images/emp3.png" width="60" style="margin-top: 10px" /> -->
+            Food Record's
+            <!-- <a href="./empinterface">
+              <img
+                src="/images/add.png"
+                width="50"
+                align="right"
+                style="margin-right: 20px; margin-top: 15px"
+            /></a> -->
+          </div>
+          <div class="table100">
+            <table>
+              <thead>
+                <tr class="table100-head">
+                  <th class="column1">Food ID</th>
+                  <th class="column2">Food Item Name</th>
+                  <th class="column3">Food Type</th>
+                  <th class="column4">Offer Type</th>
+                  <th class="column5">Offer</th>
+                  <th class="column6">Price</th>
+                  <th class="column10">Picture</th>
+                  <th class="column11">Edit / Delete</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <% data.map((item)=>{ %>
+
+                  <td class="column1"><%=item.foodid%></td>
+
+                  <td class="column2"><%=item.fooditemname%></td>
+
+                  <td class="column3"><%=item.foodtype%></td>
+
+                  <td class="column4"><%=item.offertype%></td>
+
+                  <td class="column5"><%=item.offer%></td>
+
+                  <td class="column6"><%=item.price%></td>
+
+                  <td class="column10">
+                    <a href="/employee/searchbyidpic?eid=<%=item.empid%>">
+                      <img
+                        class="img"
+                        src="/images/<%=item.picture%>"
+                        width="30"
+                    /></a>
+                  </td>
+                  <td class="column11">
+                    <!-- <a
+                      href="/employee/searchbyid?eid=<%=item.empid%>"
+                      style="text-decoration: none"
+                    > -->
+                      <i class="bi bi-pencil-square"></i>
+                      Edit /
+                      <i class="bi bi-trash-fill"></i>Delete</a
+                    >
+                  </td>
+                </tr>
+                <% })%>
+              </tbody>
+            </table>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
