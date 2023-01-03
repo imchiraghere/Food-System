@@ -17,7 +17,7 @@ $(document).ready(function () {
         $("#item").empty();
         $("#item").append($("<option>").text("Choose Item..."));
         data.data.map((it) => {
-          $("#item").append($("<option>").text(it.itemname));
+          $("#item").append($("<option>").text(it.itemname).val(it.itemid));
         });
       }
     );
@@ -47,7 +47,7 @@ $(document).ready(function () {
         $("#offer").empty();
         $("#offer").append($("<option>").text("Choose Offer..."));
         data.data.map((it) => {
-          $("#offer").append($("<option>").text(it.offname));
+          $("#offer").append($("<option>").text(it.offname).val(it.offid));
         });
       }
     );

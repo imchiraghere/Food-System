@@ -17,7 +17,7 @@
   margin: 0 auto;
 }
 .container-table100 {
-  font-family: OpenSans-Regular;
+  font-family: "Roboto Condensed", sans-serif;
   width: 100%;
   min-height: 100vh;
   background: url();
@@ -46,7 +46,7 @@
   }
 }
 body {
-  background: url("/images/backg3.jpg");
+  background: url("/images/back4.jpg");
   background-size: cover;
 }
 .wrap-table100 {
@@ -57,7 +57,7 @@ body {
 table {
   border-spacing: 1;
   border-collapse: collapse;
-  background: #fff;
+  background: transparent;
   border-radius: 10px;
   overflow: hidden;
   width: 100%;
@@ -98,36 +98,34 @@ table th.r {
   text-align: center;
 }
 .table100-head th {
-  font-family: OpenSans-Regular;
+  font-family: "Roboto Condensed", sans-serif;
   font-size: 18px;
   color: #fff;
   line-height: 1.2;
   font-weight: unset;
 }
-tbody tr:nth-child(even) {
-  background-color: #f5f5f5;
-}
+
 tbody tr {
-  font-family: OpenSans-Regular;
+  font-family: "Roboto Condensed", sans-serif;
   font-size: 15px;
   font-weight: 100;
-  color: rgb(39, 38, 38);
+  color: rgb(255, 254, 254);
   line-height: 1.2;
   font-weight: unset;
   opacity: 0.5;
 }
 tbody tr:hover {
-  color: #555;
-  background-color: #f5f5f5;
+  /* color: #555;
+  background-color: #f5f5f5; */
   cursor: pointer;
   opacity: 1;
 }
 .column1 {
   width: 180px;
   text-align: center;
-  font-family: OpenSans-Regular;
+  font-family: "Roboto Condensed", sans-serif;
   font-weight: bolder;
-  color: #000;
+  color: rgb(255, 255, 255);
 }
 .column2 {
   width: 160px;
@@ -175,12 +173,12 @@ tbody tr:hover {
 }
 
 .heading {
-  font-family: Poppins-Regular;
+  font-family: "Roboto Condensed", sans-serif;
   font-size: 35px;
   letter-spacing: 1px;
   font-weight: bold;
   text-align: center;
   color: rgb(221, 221, 221);
-  /* margin-bottom: 10px; */
+  padding: 10px;
   text-transform: uppercase;
 }
